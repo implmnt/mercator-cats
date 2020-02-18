@@ -15,7 +15,7 @@ cache:
 
 deploy:
   provider: script
-  skip_cleanup: true
+  cleanup: true
   script: sbt +publish
   on:
     tags: true
