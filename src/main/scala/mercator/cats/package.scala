@@ -1,3 +1,3 @@
-package im.plmnt.mercator
+package mercator
 
 package object cats extends Interop

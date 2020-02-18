@@ -8,12 +8,12 @@ Derives [mercator](https://github.com/propensive/mercator) Monadic for [cats](ht
 
 Add to your `build.sbt`
 ```scala
-libraryDependencies += "im.plmnt" %% "mercator-cats" % "0.1.0"
+libraryDependencies += "im.plmnt" %% "mercator-cats" % "1.0.0"
 ```
 
 Can be used with magnolia combine if the Monad instance exists for Typeclass
 ```scala
-import im.plmnt.mercator.cats._
+import mercator.cats._
 
 type Typeclass[T]
 

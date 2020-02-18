@@ -1,4 +1,4 @@
-package im.plmnt.mercator.cats
+package mercator.cats
 
 import cats.Monad
 import cats.instances.either._
@@ -26,8 +26,8 @@ object DerivedSuite extends SimpleTestSuite {
     val a = 42
 
     assertEquals(monadic[F].point(a), Monad[F].pure(a))
-    assertEquals(monadic[F].map(fa, identity[A]), Monad[F].map(fa)(identity[A]))
-    assertEquals(monadic[F].flatMap(fa, monadic[F].point[A]), Monad[F].flatMap(fa)(Monad[F].pure[A]))
+    assertEquals(monadic[F].map(fa)(identity[A]), Monad[F].map(fa)(identity[A]))
+    assertEquals(monadic[F].flatMap(fa)(monadic[F].point[A]), Monad[F].flatMap(fa)(Monad[F].pure[A]))
   }
 
   private def monadic[F[_]](implicit ev: Monadic[F]): Monadic[F] = ev
