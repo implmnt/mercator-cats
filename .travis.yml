@@ -1,4 +1,6 @@
 language: scala
+before_script:
+- gpg --import key.gpg
 script:
 - sbt clean compile test
 before_cache:
