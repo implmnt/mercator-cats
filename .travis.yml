@@ -14,7 +14,7 @@ cache:
 deploy:
   provider: script
   cleanup: true
-  script: sbt + publishSigned sonatypeRelease
+  script: sbt +publishSigned sonatypeRelease
   on:
     tags: true
 before_install:
