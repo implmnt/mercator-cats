@@ -1,4 +1,4 @@
-name: Compile & Test
+name: build
 
 on:
   push:
