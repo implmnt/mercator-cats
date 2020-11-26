@@ -1,11 +1,6 @@
 package mercator.cats
 
 import cats.Monad
-import cats.instances.either._
-import cats.instances.int._
-import cats.instances.list._
-import cats.instances.option._
-import cats.instances.tuple._
 import cats.syntax.either._
 import cats.syntax.option._
 import mercator.Monadic
